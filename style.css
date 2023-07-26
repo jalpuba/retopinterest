@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: white;
+    justify-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.finder input{
+    width: 700px;
+    height: 50px;
+    border-radius: 35px;
+
+}
+#navbar-pinterest{
+    display: flex;
+    
+}
+
+#navbar-pinterest ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar-pinterest li{
+    margin-right: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#notifications img {
+    width: 30px;
+}
+#message img {
+    width: 30px;
+}
+
+#profile-img img {
+    width: 35px;
+}
+
+#buscar{
+    width: 30px;
+}
+
+
+#pinterest-icon img{
+    width: 50px;
+
+}
+
+#pinterest-icon img {
+    transition: all 0.5s ease;
+}
+
+#pinterest-icon:hover img {
+    transform: scale(1.2) translateX(10px);
+}
+
+.flecha_abajo{
+    width: 20px;
+}
+
+#content{
+    columns: 5 250px;
+    column-gap: 1.5em;
+    /*border-radius: 37px;*/
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+#content img{
+    border-radius: 37px;
+}
+
+.card-image{
+    max-width: 100%;
+    margin-bottom: 3em;
+    display: block;
+    break-inside: avoid;
+    
+
+}
+
+.iconos #profile-img img{
+    border-radius: 100%;
+}
+
+.hipervinculos li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+.hipervinculos li a {
+    text-decoration: none;
+}
+  
+#navbar-pinterest input[type="search"] {
+    background-image: url('/pinterest/img/buscar_icono.png');
+    background-size: 30px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.hipervinculos a {
+    font-size: 1.2em;
+    color: black;
+}
+
+.hipervinculos a:hover {
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+.card-image {
+    position: relative;
+}
+
+.megusta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+.card-image:hover .megusta {
+    display: block;
+}
+
+.card-image {
+    position: relative;
+}
+
+.megusta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    background-color: red;
+    border-radius: 45px;
+    padding: 5px 10px;
+    height: 60px;
+}
+
+.subir_icono,
+.puntos {
+    position: absolute;
+    bottom: 10px;
+    width: 35px;
+    display: none;
+}
+
+.subir_icono {
+    right: 70px;
+}
+
+.puntos {
+    right: 30px;
+}
+
+.card-image:hover .megusta,
+.card-image:hover .subir_icono,
+.card-image:hover .puntos {
+    display: block;
+}
+
+.card-image:hover img:not(.subir_icono):not(.puntos) {
+    opacity: 0.3;
+}
